@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Continuité pédagogique | M. Salce - CodiMD
+    </title>
+    <link rel="icon" type="image/png" href="https://codi-versailles.beta.education.fr/favicon.png">
+    <link rel="apple-touch-icon" href="https://codi-versailles.beta.education.fr/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha256-H0KfTigpUV+0/5tn2HXC0CPwhhDhWgSawJdnFd0CGCo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.3/css/fork-awesome.min.css" integrity="sha256-ZhApazu+kejqTYhMF+1DzNKjIzP7KXu6AzyXcC1gMus=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css" integrity="sha256-tAflq+ymku3Khs+I/WcAneIlafYgDiOQ9stIHH985Wo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300italic,300|Source+Serif+Pro|Source+Code+Pro:400,300,500&subset=latin,latin-ext);.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{padding:0 1em;color:#777;border-left:.25em solid #ddd}.night .markdown-body blockquote{color:#bcbcbc}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.night .markdown-body h1,.night .markdown-body h2,.night .markdown-body h3,.night .markdown-body h4,.night .markdown-body h5,.night .markdown-body h6{color:#ddd}.markdown-body h1 .fa-link,.markdown-body h2 .fa-link,.markdown-body h3 .fa-link,.markdown-body h4 .fa-link,.markdown-body h5 .fa-link,.markdown-body h6 .fa-link{color:#000;vertical-align:middle;visibility:hidden;font-size:16px}.night .markdown-body h1 .fa-link,.night .markdown-body h2 .fa-link,.night .markdown-body h3 .fa-link,.night .markdown-body h4 .fa-link,.night .markdown-body h5 .fa-link,.night .markdown-body h6 .fa-link{color:#fff}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .fa-link,.markdown-body h2:hover .anchor .fa-link,.markdown-body h3:hover .anchor .fa-link,.markdown-body h4:hover .anchor .fa-link,.markdown-body h5:hover .anchor .fa-link,.markdown-body h6:hover .anchor .fa-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.night .markdown-body table tr{background-color:#5f5f5f}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.night .markdown-body table tr:nth-child(2n){background-color:#4f4f4f}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.night .markdown-body code,.night .markdown-body tt{color:#eee;background-color:hsla(0,0%,90.2%,.36)}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\A0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body pre{border:inherit!important}.night .markdown-body pre{filter:invert(100%)}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-webkit-inline-flex;display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.night .markdown-body .gist table tr:nth-child(2n){background-color:#ddd}.markdown-body code[data-gist-id]{background:none;padding:0;filter:invert(100%)}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.geo,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.night .markdown-body pre.graphviz .graph>polygon{fill:#333}.night .markdown-body pre.mermaid .sectionTitle,.night .markdown-body pre.mermaid .titleText,.night .markdown-body pre.mermaid text{fill:#fff}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.night .markdown-body .abc path{fill:#eee}.night .markdown-body .abc path.note_selected{fill:##4DD0E1}.night tspan{fill:#fefefe}.night pre rect{fill:transparent}.night pre.flow-chart path,.night pre.flow-chart rect{stroke:#fff}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body img{background-color:transparent}.peertube,.vimeo,.youtube{position:relative;cursor:pointer;display:table;width:100%;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.youtube{position:relative;width:100%;padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;position:absolute}.peertube img,.youtube img{width:100%;height:100%;top:0;left:0;z-index:0}.peertube img{object-fit:contain}.peertube iframe,.vimeo iframe,.youtube iframe{position:absolute;top:0;left:0;width:100%;height:100%;vertical-align:middle;z-index:1}.peertube .icon,.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;-webkit-transition:opacity .2s;transition:opacity .2s;z-index:0}.peertube:hover .icon,.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;-webkit-transition:opacity .2s;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.geo-map{width:100%;height:250px}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.9;background-color:#ccc;border:none}.ui-toc-label,.ui-toc .open .ui-toc-label{-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#5f5f5f}.ui-toc-label:focus{opacity:1;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.night .ui-toc-dropdown .nav>li>a:focus,.night .ui-toc-dropdown .nav>li>a:hover{color:#fff;border-left-color:#fff}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.night .ui-toc-dropdown .nav>.active:focus>a,.night .ui-toc-dropdown .nav>.active:hover>a,.night .ui-toc-dropdown .nav>.active>a{color:#fff;border-left:2px solid #fff}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.night .ui-toc-dropdown .nav>li>a{color:#aaa}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,"\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3",Osaka,Meiryo,"\30E1\30A4\30EA\30AA",MS Gothic,"\FF2D\FF33   \30B4\30B7\30C3\30AF",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,"\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF",sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,"\5FAE\8EDF\6B63\9ED1",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,"\5FAE\8EDF\6B63\9ED1UI",sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,"\5FAE\8F6F\96C5\9ED1UI",sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.cgu,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:rgba(0,0,0,.85)}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.cgu,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}small span{line-height:22px}small .dropdown{display:inline-block}small .dropdown a:focus,small .dropdown a:hover{text-decoration:none}.unselectable{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-o-user-select:none;user-select:none}.night .navbar{background:#333;border-bottom-color:#333;color:#eee}.night .navbar a{color:#eee}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="Continuité-pédagogique--M-Salce"><a class="anchor hidden-xs" href="#Continuité-pédagogique--M-Salce" title="Continuité-pédagogique--M-Salce"><i class="fa fa-link"></i></a>Continuité pédagogique | M. Salce</h1><h2 id="Semaine-du-08-Juin-au-11-Juin"><a class="anchor hidden-xs" href="#Semaine-du-08-Juin-au-11-Juin" title="Semaine-du-08-Juin-au-11-Juin"><i class="fa fa-link"></i></a>Semaine du 08 Juin au 11 Juin</h2><div class="alert alert-info">
+<details><summary>Cliquer pour faire apparaître le travail de <strong>Sixième, Quatrième et Troisième</strong></summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Une fois n’est pas coutume, le <strong>même travail quelque soit votre classe</strong>, l’occasion rêvée de travailler avec votre petite soeur de 6e ou votre grand frère de 3e <img class="emoji" alt=":wink:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/wink.png"> !</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Le thème de cette semaine est la <strong>démarche scientifique</strong> une méthode pour résoudre des problèmes vue à l’école et revue au collège, ça doit donc forcément vous dire quelque chose ! Si ce n’est pas le cas, rassurez-vous on reprend à zéro !</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Il y a bien un <strong>quiz sur quizinière</strong> mais cette fois-ci il faudra le trouver, en utilisant ce site <strong><a href="http://acver.fr/demsci" target="_blank" rel="noopener">http://acver.fr/demsci</a></strong> : lisez bien les informations, répondez aux questions et vous trouverez un moyen d’accéder au quiz !</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Pour les élèves que je vois <strong>Jeudi 11 Juin</strong> : essayez de trouver et de faire le quiz avant le cours, pour qu’on puisse faire la correction ensemble.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Pour les autres je vous laisse toute la semaine pour le faire (<strong>Dimance 14 Juin à 18:00</strong>). Je vous propose une <strong>classe virtuelle</strong> pour vous aider et répondre à vos questions à partir de <strong>15h30</strong> ce même <strong>Jeudi 11 Juin</strong>.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Pour ceux qui veulent aller plus loin sur ce sujet passionnant voici l’épisode de l’esprit sorcier consacré à la démarche scientifique :<br>
+<div class="youtube" data-videoid="nIMnM8UdUq4"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/nIMnM8UdUq4"></iframe></div></li>
+</ul>
+</details>
+</div><h2 id="Semaine-du-02-Juin-au-05-Juin"><a class="anchor hidden-xs" href="#Semaine-du-02-Juin-au-05-Juin" title="Semaine-du-02-Juin-au-05-Juin"><i class="fa fa-link"></i></a><s>Semaine du 02 Juin au 05 Juin</s></h2><div class="alert alert-danger">
+<details><summary>Cliquer pour faire apparaître le travail de Sixième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label><img class="emoji" alt=":alarm_clock:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/alarm_clock.png"> N’oubliez pas la suite du travail sur <strong>les déchets recyclables</strong> <img class="emoji" alt=":recycle:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/recycle.png"> <strong><a href="https://www.quiziniere.com/#/Exercice/NYAW35" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/NYAW35</a></strong> pour le <strong><code>Mardi 02 Juin 18:00</code></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Pour cette semaine un travail <strong>un peu particulier</strong> : je vous demande de faire <strong>votre propre appréciation de votre travail durant le confinement</strong> qui figurera sur le bulletin du 3e trimestre ! Je vous ai préparé un formulaire pour me proposer votre appréciation (avec <strong>informations et conseils</strong> pour vous aider) : <strong><a href="http://acver.fr/evalconf" target="_blank" rel="noopener">http://acver.fr/evalconf</a></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>On s’y connecte comme pour aller dans les classes virtuelles, en cliquant sur <strong>mon compte collège Essonne</strong> puis avec <strong>vos identifiants élèves</strong> (ça ne fonctionne pas avec les codes parents)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Vous avez jusqu’à <strong><code>Jeudi 04 Juin 14:00</code></strong> car il faut que je les relise attentivement et que je les écrive dans vos bulletins sur Pronote !</li>
+</ul>
+</details>
+</div><div class="alert alert-warning">
+<details><summary>Cliquer pour faire apparaître le travail de Quatrième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label><img class="emoji" alt=":alarm_clock:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/alarm_clock.png"> N’oubliez de faire le travail sur <strong>l’éruption du volcan</strong> <img class="emoji" alt=":volcano:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/volcano.png"> <strong><a href="https://www.quiziniere.com/#/Exercice/OEZXOM" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/OEZXOM</a></strong> pour le <strong><code>Mardi 02 Juin 18:00</code></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Pour cette semaine un travail <strong>un peu particulier</strong> : je vous demande de faire <strong>votre propre appréciation de votre travail durant le confinement</strong> qui figurera sur le bulletin du 3e trimestre ! Je vous ai préparé un formulaire pour me proposer votre appréciation (avec <strong>informations et conseils</strong> pour vous aider) : <strong><a href="http://acver.fr/evalconf" target="_blank" rel="noopener">http://acver.fr/evalconf</a></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>On s’y connecte comme pour aller dans les classes virtuelles, en cliquant sur <strong>mon compte collège Essonne</strong> puis avec <strong>vos identifiants élèves</strong> (ça ne fonctionne pas avec les codes parents)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Vous avez jusqu’à <strong><code>Jeudi 04 Juin 14:00</code></strong> car il faut que je les relise attentivement et que je les écrive dans vos bulletins sur Pronote !</li>
+</ul>
+</details>
+</div><h2 id="Semaine-du-25-Mai-au-29-Mai"><a class="anchor hidden-xs" href="#Semaine-du-25-Mai-au-29-Mai" title="Semaine-du-25-Mai-au-29-Mai"><i class="fa fa-link"></i></a><s>Semaine du 25 Mai au 29 Mai</s></h2><div class="alert alert-danger">
+<details><summary>Cliquer pour faire apparaître le travail de Sixième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":memo:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/memo.png"> Faire le travail <strong><a href="http://acver.fr/materiau" target="_blank" rel="noopener">http://acver.fr/materiau</a> dernier délai <code>Lundi 25 Mai 18:00</code></strong>.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":microphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/microphone.png"> <strong>Classe virtuelle</strong> <strong><code>Mardi 26 Mai</code> selon le planning suivant</strong> avec le lien habituel <strong><a href="http://acver.fr/cvtuilerie" target="_blank" rel="noopener">http://acver.fr/cvtuilerie</a></strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Classe</th>
+<th style="text-align:center">Horaires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">607</td>
+<td style="text-align:center">10:00</td>
+</tr>
+<tr>
+<td style="text-align:center">605</td>
+<td style="text-align:center">11:00</td>
+</tr>
+<tr>
+<td style="text-align:center">602</td>
+<td style="text-align:center">14:00</td>
+</tr>
+<tr>
+<td style="text-align:center">601</td>
+<td style="text-align:center">15:00</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>La suite du travail sur <strong>les déchets recyclables</strong> <img class="emoji" alt=":recycle:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/recycle.png"> <strong><a href="https://www.quiziniere.com/#/Exercice/NYAW35" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/NYAW35</a></strong> pour le <strong><code>Mardi 02 Juin 18:00</code></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><strong>Correction du travail</strong> de la semaine dernière <a href="https://codi-versailles.beta.education.fr/s/64POeSPwP" target="_blank" rel="noopener">ici</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label><strong>Pas de classe virtuelle</strong> prévue pour le moment pour la semaine du 2 Juin, possibilité de reprise…</li>
+</ul>
+</details>
+</div><div class="alert alert-warning">
+<details><summary>Cliquer pour faire apparaître le travail de Quatrième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Le quiz sur l’odeur de soufre est à faire avant <strong><code>Mardi 26 Mai 18:00</code></strong> <strong><a href="https://www.quiziniere.com/#/Exercice/X8Q4Z3" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/X8Q4Z3</a></strong>. <strong>Correction disponible</strong> le lendemain.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Le quiz de cette semaine est disponible ici : <strong><a href="https://www.quiziniere.com/#/Exercice/OEZXOM" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/OEZXOM</a></strong> On entame des révisions sur l’année de quatrième, ici il est question de la <strong>vitesse</strong> du son et de la lumière et de la <strong>formule</strong> <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>v</mi><mo>=</mo><mfrac><mi>d</mi><mi>t</mi></mfrac></math>" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 2.899em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.577em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.162em, 1002.58em, 2.835em, -999.997em); top: -2.249em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: MathJax_Math-italic;">v</span><span class="mo" id="MathJax-Span-4" style="font-family: MathJax_Main; padding-left: 0.261em;">=</span><span class="mfrac" id="MathJax-Span-5" style="padding-left: 0.261em;"><span style="display: inline-block; position: relative; width: 0.518em; height: 0px; margin-right: 0.132em; margin-left: 0.132em;"><span style="position: absolute; clip: rect(3.285em, 1000.39em, 4.186em, -999.997em); top: -4.437em; left: 50%; margin-left: -0.19em;"><span class="mi" id="MathJax-Span-6" style="font-size: 70.7%; font-family: MathJax_Math-italic;">d<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span style="display: inline-block; width: 0px; height: 3.993em;"></span></span><span style="position: absolute; clip: rect(3.349em, 1000.26em, 4.186em, -999.997em); top: -3.6em; left: 50%; margin-left: -0.125em;"><span class="mi" id="MathJax-Span-7" style="font-size: 70.7%; font-family: MathJax_Math-italic;">t</span><span style="display: inline-block; width: 0px; height: 3.993em;"></span></span><span style="position: absolute; clip: rect(0.84em, 1000.52em, 1.29em, -999.997em); top: -1.284em; left: 0em;"><span style="display: inline-block; overflow: hidden; vertical-align: 0em; border-top: 1.3px solid; width: 0.518em; height: 0px;"></span><span style="display: inline-block; width: 0px; height: 1.097em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.255em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.496em; border-left: 0px solid; width: 0px; height: 1.575em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mo>=</mo><mfrac><mi>d</mi><mi>t</mi></mfrac></math></span></span><script type="math/tex" id="MathJax-Element-1">v=\frac{d}{t}</script></span>. <strong>Date Limite <code>Mardi 02 Juin</code> 18:00</strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><strong>Pas de classe virtuelle ces prochains jours</strong>, pour cause d’orientation des troisièmes, et d’inconnues comme une reprise partielle des cours à partir du 02 Juin.</li>
+</ul>
+</details>
+</div><div class="alert alert-success">
+<details><summary>Cliquer pour faire apparaître le travail de Troisième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Le quiz sur l’odeur de soufre est à faire avant <strong><code>Mardi 26 Mai 18:00</code></strong> <strong><a href="https://www.quiziniere.com/#/Exercice/DE4QG5" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/DE4QG5</a></strong>. <strong>Correction disponible</strong> le lendemain.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Le quiz de cette semaine est disponible ici : <strong><a href="https://www.quiziniere.com/#/Exercice/8B84B4" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/8B84B4</a></strong> Un extrait de série où une évasion de prison se fait grâce à la science et en particulier une réaction chimique à notre programme de 3e : l’<strong>attaque d’un acide sur le fer</strong> l’occasion de revoir ce que l’on a vu cette année en chimie : ion, pH, tests d’identification, équations…<strong>Date Limite <code>Mardi 02 Juin</code> 18:00</strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><strong>Pas de classe virtuelle ces prochains jours</strong>, pour cause d’orientation des troisièmes, et d’inconnues comme une reprise partielle des cours à partir du 02 Juin.</li>
+</ul>
+</details>
+</div><h2 id="Semaine-du-18-mai-au-22-mai"><a class="anchor hidden-xs" href="#Semaine-du-18-mai-au-22-mai" title="Semaine-du-18-mai-au-22-mai"><i class="fa fa-link"></i></a><s>Semaine du 18 mai au 22 mai</s></h2><div class="alert alert-danger">
+<details><summary>Cliquer pour faire apparaître le travail de Sixième</summary>
+<h4 id="Avant-la-classe-virtuelle"><a class="anchor hidden-xs" href="#Avant-la-classe-virtuelle" title="Avant-la-classe-virtuelle"><i class="fa fa-link"></i></a>Avant la classe virtuelle</h4>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label><img class="emoji" alt=":memo:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/memo.png"> Faire le travail <strong><a href="http://acver.fr/materiau" target="_blank" rel="noopener">http://acver.fr/materiau</a></strong>. Il m’a demandé du temps car j’ai tout filmé, monté, programmé moi-même mais vous avez en main une activité plutôt sympa à faire : reconnaître les matériaux d’emballage grâce à des petites expériences. Je les ai filmé pour vous mais vous avez <strong>le droit de les refaire chez vous</strong>, en faisant bien attention, notamment avec l’eau chaude pour le dernier test.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Au <strong>programme</strong> : des emballages à collecter, des tests à réaliser, un tableau à remplir, trouver le nom des emballages grâce au site, et vos réponses à rentrer dans un quiz !</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Travail de la semaine dernière :je vous rappelle que vous pouvez refaire le quiz fait en direct à cette adresse <strong><a href="https://www.wooclap.com/SUCRE" target="_blank" rel="noopener">https://www.wooclap.com/SUCRE</a></strong> avec comme pseudo <strong>“60X Nom Prénom”</strong> (<img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"> pas d’inscription c’est inutile, remplacer le X par votre numéro de classe)</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Les résultats de ce quiz sont sur ce <a href="https://monnuage.ac-versailles.fr/s/AJjkzMy3bpc8n7K" target="_blank" rel="noopener"><strong>document</strong></a>, le mot de passe demandé est dans le message envoyé sur l’ENT</p>
+</li>
+</ul>
+</details>
+</div><div class="alert alert-warning">
+<details><summary>Cliquer pour faire apparaître le travail de Quatrième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>La correction du quiz de la semaine dernière est disponible <strong><a href="https://www.quiziniere.com/#/Exercice/X8Q4Z3" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/X8Q4Z3</a></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Le quiz de cette semaine est disponible ici : <strong><a href="https://www.quiziniere.com/#/Exercice/628RYK" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/628RYK</a></strong> Un article à lire sur l’odeur de soufre que vous avez peut-être senti la semaine dernière. C’est l’occasion de revoir une dernière fois la notion d’équilibre des équations chimiques. <strong>Date Limite <code>Mardi 26 Mai</code></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Pas de classe virtuelle ces prochains jours, pour cause d’orientation des troisièmes, je vous ai enregistré des aides vocales directement dans le quiz.</li>
+</ul>
+</details>
+</div><div class="alert alert-success">
+<details><summary>Cliquer pour faire apparaître le travail de Troisième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>La correction du quiz de la semaine dernière est disponible <strong><a href="https://www.quiziniere.com/#/Exercice/LMO78O" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/LMO78O</a></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Le quiz de cette semaine est disponible ici : <strong><a href="https://www.quiziniere.com/#/Exercice/DE4QG5" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/DE4QG5</a></strong> Un article à lire sur l’odeur de soufre que vous avez peut-être senti la semaine dernière. C’est l’occasion de revoir une dernière fois la notion d’équilibre des équations chimiques. <strong>Date Limite <code>Mardi 26 Mai</code></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Pas de classe virtuelle ces prochains jours, pour cause d’orientation et de planning chargé, je vous ai enregistré des aides vocales directement dans le quiz.</li>
+</ul>
+</details>
+</div><h2 id="Semaine-du-11-mai-au-15-mai"><a class="anchor hidden-xs" href="#Semaine-du-11-mai-au-15-mai" title="Semaine-du-11-mai-au-15-mai"><i class="fa fa-link"></i></a><s>Semaine du 11 mai au 15 mai</s></h2><div class="alert alert-danger">
+<details><summary>Cliquer pour faire apparaître le travail de Sixième</summary>
+<h4 id="Avant-la-classe-virtuelle1"><a class="anchor hidden-xs" href="#Avant-la-classe-virtuelle1" title="Avant-la-classe-virtuelle1"><i class="fa fa-link"></i></a>Avant la classe virtuelle</h4>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":memo:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/memo.png"> Revoir le thème n°1 de l’année : le sucre <img class="emoji" alt=":candy:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/candy.png"></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":computer:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/computer.png">  <strong><a href="https://physiquetuilerie.jimdofree.com/sixi%C3%A8me/th%C3%A8mes-de-sixi%C3%A8me/th%C3%A8me-1-le-sucre/" target="_blank" rel="noopener">le site du cours</a></strong> pour vous aider à réviser</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":microphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/microphone.png"> Classe virtuelle pour tous les 6e <strong><code>Mardi 12 Mai à 14:00 </code></strong> avec le lien habituel <strong><a href="http://acver.fr/cvtuilerie" target="_blank" rel="noopener">http://acver.fr/cvtuilerie</a></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Lors de cette classe virtuelle vous allez participer à un quiz en direct sur ce thème <img class="emoji" alt=":tada:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/tada.png"> Il faudra se connecter avec <img class="emoji" alt=":iphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/iphone.png"> ou <img class="emoji" alt=":computer:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/computer.png"> à ce lien <strong><a href="https://www.wooclap.com/SUCRE" target="_blank" rel="noopener">https://www.wooclap.com/SUCRE</a></strong> avec comme pseudo <strong>“60X Nom Prénom”</strong> (<img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"> pas d’inscription c’est inutile, remplacer le X par votre numéro de classe)</li>
+</ul>
+</details>
+</div><div class="alert alert-warning">
+<details><summary>Cliquer pour faire apparaître le travail de Quatrième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Pour info : le quiz fait en classe virtuelle est maintenant disponible à tout moment et sans limite de temps <strong><a href="https://www.wooclap.com/CV4" target="_blank" rel="noopener">https://www.wooclap.com/CV4</a></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":microphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/microphone.png"> Classe virtuelle pour tous les 4e <strong><code>Mercredi 13 Mai à 14:00 </code></strong> avec le lien habituel <strong><a href="http://acver.fr/cvtuilerie" target="_blank" rel="noopener">http://acver.fr/cvtuilerie</a></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Lors de cette classe virtuelle nous réfléchirons ensemble aux questions posées dans le quiz sur l’équilibre des équations des transformations chimiques <strong><a href="https://www.quiziniere.com/#/Exercice/X8Q4Z3" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/X8Q4Z3</a></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Voici les vidéos utilisées dans le quiz ( <img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"> pour la deuxième ne pas chercher à comprendre après 2 min 30s) <div class="youtube" data-videoid="3nmxug62vmA"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/3nmxug62vmA"></iframe></div><div class="youtube" data-videoid="VZVBS4OwwlE"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/VZVBS4OwwlE"></iframe></div></li>
+</ul>
+</details>
+</div><div class="alert alert-success">
+<details><summary>Cliquer pour faire apparaître le travail de Troisième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":memo:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/memo.png"> Faire les quiz sur les transformations chimiques (vous avez jusqu’à <strong><code>mardi 12 Mai</code></strong>) : <a href="https://www.quiziniere.com/#/Exercice/8ORNND" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/8ORNND</a> et <a href="https://www.wooclap.com/3CV" target="_blank" rel="noopener">https://www.wooclap.com/3CV</a> (quiz fait en direct lors de la classe virtuelle du 7 mai)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":microphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/microphone.png"> Classe virtuelle pour tous les 3e <strong><code>Vendredi 15 Mai à 14:00 </code></strong> avec le lien habituel <a href="http://acver.fr/cvtuilerie" target="_blank" rel="noopener">http://acver.fr/cvtuilerie</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Lors de cette classe virtuelle nous réfléchirons ensemble aux questions posées dans le quiz sur l’équilibre des équations des transformations chimiques <strong><a href="https://www.quiziniere.com/#/Exercice/LMO78O" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/LMO78O</a></strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Voici les vidéos utilisées dans le quiz ( <img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"> pour la deuxième ne pas chercher à comprendre après 2 min 30s) <div class="youtube" data-videoid="3nmxug62vmA"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/3nmxug62vmA"></iframe></div><div class="youtube" data-videoid="VZVBS4OwwlE"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/VZVBS4OwwlE"></iframe></div></li>
+</ul>
+</details>
+</div><h2 id="Semaine-du-4-mai-au-8-mai"><a class="anchor hidden-xs" href="#Semaine-du-4-mai-au-8-mai" title="Semaine-du-4-mai-au-8-mai"><i class="fa fa-link"></i></a><s>Semaine du 4 mai au 8 mai</s></h2><div class="alert alert-danger">
+<details><summary>Cliquer pour faire apparaître le travail de Sixième</summary>
+<h4 id="Après-la-classe-virtuelle"><a class="anchor hidden-xs" href="#Après-la-classe-virtuelle" title="Après-la-classe-virtuelle"><i class="fa fa-link"></i></a>Après la classe virtuelle</h4>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Le quiz sur les saisons sur la quizinière est terminé, vous pouvez aller voir vos résultats <img class="emoji" alt=":100:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/100.png"> : <a href="https://www.quiziniere.com/#/Exercice/QY8BQG" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/QY8BQG</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Pour voir vos résultats au quiz de mardi matin : <a href="https://monnuage.ac-versailles.fr/s/MqcpBJbXeZqWZX9" target="_blank" rel="noopener">https://monnuage.ac-versailles.fr/s/MqcpBJbXeZqWZX9</a> (mot de passe envoyé sur la messagerie ENT <img class="emoji" alt=":smirk:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/smirk.png">)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Vous pouvez refaire le quiz à la même adresse : <a href="https://www.wooclap.com/CV6" target="_blank" rel="noopener">https://www.wooclap.com/CV6</a> mais <img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"> une seule tentative possible.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label>Voici les points de cours à recopier <img class="emoji" alt=":pencil:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/pencil.png"></li>
+</ul>
+<blockquote></blockquote>
+<blockquote style="border-left-color: brown;">
+<p><span class="color" data-color="brown"></span> <strong>Les saisons sur Terre</strong><br>
+<img class="emoji" alt=":sunny:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/sunny.png"> L’origine des saisons vient de l’inclinaison de la Terre sur son axe de rotation.<br>
+<img class="emoji" alt=":cloud:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/cloud.png"> Ce n’est pas l’éloignement ou le rapprochement du Soleil qui en est la cause.<br>
+<img class="emoji" alt=":snowflake:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/snowflake.png"> Si les rayons du soleil frappent verticalement, ils chauffent beaucoup : c’est l’été ! <img class="emoji" alt=":beach_with_umbrella:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/beach_with_umbrella.png"><br>
+<img class="emoji" alt=":leaves:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/leaves.png"> Si les rayons sont inclinés, ils chauffent moins : c’est l’hiver ! <img class="emoji" alt=":snowman:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/snowman.png"><br>
+<img class="emoji" alt=":maple_leaf:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/maple_leaf.png"> C’est aussi pour cela que les saisons sont inversées entre les hémisphère Nord et Sud <img class="emoji" alt=":earth_asia:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/earth_asia.png"></p>
+</blockquote>
+<h4 id="Avant-la-classe-virtuelle2"><a class="anchor hidden-xs" href="#Avant-la-classe-virtuelle2" title="Avant-la-classe-virtuelle2"><i class="fa fa-link"></i></a>Avant la classe virtuelle</h4>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":memo:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/memo.png"> Faire, si ce n’est pas déjà fait, le quiz sur les saisons (je l’ai prolongé jusqu’à <strong><code>Lundi 4 Mai 18:00</code></strong>) <a href="https://www.quiziniere.com/#/Exercice/QY8BQG" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/QY8BQG</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":microphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/microphone.png"> Classe virtuelle pour tous les 6e <strong><code>Mardi 5 Mai à 10:30 </code></strong> avec le lien habituel <a href="http://acver.fr/cvtuilerie" target="_blank" rel="noopener">http://acver.fr/cvtuilerie</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Lors de cette classe virtuelle je vous donnerai les points à retenir sur les saisons et vous allez participer à un quiz en direct <img class="emoji" alt=":scream:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/scream.png"> Il faudra se connecter avec <img class="emoji" alt=":iphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/iphone.png"> ou <img class="emoji" alt=":computer:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/computer.png"> à ce lien <a href="https://www.wooclap.com/CV6" target="_blank" rel="noopener">https://www.wooclap.com/CV6</a> avec comme pseudo <strong>“60X Nom Prénom”</strong> (<img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"> pas d’inscription c’est inutile)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Ce quiz portera sur le thème Planète Terre (Mouvements, Planètes du système solaire, Lune, Saisons) donc vous pouvez réviser tout ce qui a été fait depuis le début du confinement.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Pour vous y aider je vous partage un très beau cours en ligne réalisé par un professeur d’un autre collège :  <a href="https://view.genial.ly/5e9e05c6873c640dabe31ef5/presentation-6eme-les-mouvements-dans-le-systeme-solaire" target="_blank" rel="noopener">cliquer ici</a></li>
+</ul>
+</details>
+</div><div class="alert alert-warning">
+<details><summary>Cliquer pour faire apparaître le travail de Quatrième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":memo:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/memo.png"> Faire, si ce n’est pas déjà fait, le quiz sur les transformations chimiques (date limite <strong><code>Mardi 5 Mai 18:00</code></strong>) <a href="https://www.quiziniere.com/#/Exercice/D44N2X" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/D44N2X</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":microphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/microphone.png"> Classe virtuelle pour tous les 4e <strong><code>Mercredi 6 Mai à 10:30 </code></strong> avec le lien habituel <a href="http://acver.fr/cvtuilerie" target="_blank" rel="noopener">http://acver.fr/cvtuilerie</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Lors de cette classe virtuelle je vous donnerai les points à retenir sur les transformations chimiques et vous allez participer à un quiz en direct <img class="emoji" alt=":scream:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/scream.png"> Il faudra se connecter avec<img class="emoji" alt=":iphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/iphone.png"> ou <img class="emoji" alt=":computer:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/computer.png"> à ce lien <a href="https://www.wooclap.com/CV4" target="_blank" rel="noopener">https://www.wooclap.com/CV4</a> avec comme pseudo <strong>“40X Nom Prénom”</strong> (<img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"> pas d’inscription c’est inutile)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Voici les vidéos utilisées dans le quiz<div class="youtube" data-videoid="ZvppwGr_j_g"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/ZvppwGr_j_g"></iframe></div><div class="youtube" data-videoid="3EkYo_-VRic"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/3EkYo_-VRic"></iframe></div></li>
+</ul>
+</details>
+</div><div class="alert alert-success">
+<details><summary>Cliquer pour faire apparaître le travail de Troisième</summary>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled"><label></label><img class="emoji" alt=":memo:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/memo.png"> Faire le quiz sur les transformations chimiques (vous avez jusqu’à la classe virtuelle) : <a href="https://www.quiziniere.com/#/Exercice/8ORNND" target="_blank" rel="noopener">https://www.quiziniere.com/#/Exercice/8ORNND</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label><img class="emoji" alt=":microphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/microphone.png"> Classe virtuelle pour tous les 3e <strong><code>Jeudi 7 Mai à 14:00 </code></strong> avec le lien habituel <a href="http://acver.fr/cvtuilerie" target="_blank" rel="noopener">http://acver.fr/cvtuilerie</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Lors de cette classe virtuelle je vous donnerai les points à retenir sur les transformations chimiques et vous allez participer à un quiz en direct <img class="emoji" alt=":scream:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/scream.png"> Il faudra se connecter avec <img class="emoji" alt=":iphone:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/iphone.png"> ou <img class="emoji" alt=":computer:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/computer.png"> à ce lien <a href="https://app.wooclap.com/3CV" target="_blank" rel="noopener">https://app.wooclap.com/3CV</a> avec comme pseudo <strong>“30X Nom Prénom”</strong> (<img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"> pas d’inscription c’est inutile)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="" disabled="disabled"><label></label>Voici les vidéos utilisées dans le quiz<div class="youtube" data-videoid="ZvppwGr_j_g"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/ZvppwGr_j_g"></iframe></div><div class="youtube" data-videoid="3EkYo_-VRic"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/3EkYo_-VRic"></iframe></div></li>
+</ul>
+</details>
+</div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Continuité-pédagogique--M-Salce" title="Continuité pédagogique | M. Salce">Continuité pédagogique | M. Salce</a><ul class="nav">
+<li><a href="#Semaine-du-08-Juin-au-11-Juin" title="Semaine du 08 Juin au 11 Juin">Semaine du 08 Juin au 11 Juin</a></li>
+<li><a href="#Semaine-du-02-Juin-au-05-Juin" title="Semaine du 02 Juin au 05 Juin">Semaine du 02 Juin au 05 Juin</a></li>
+<li><a href="#Semaine-du-25-Mai-au-29-Mai" title="Semaine du 25 Mai au 29 Mai">Semaine du 25 Mai au 29 Mai</a></li>
+<li><a href="#Semaine-du-18-mai-au-22-mai" title="Semaine du 18 mai au 22 mai">Semaine du 18 mai au 22 mai</a></li>
+<li><a href="#Semaine-du-11-mai-au-15-mai" title="Semaine du 11 mai au 15 mai">Semaine du 11 mai au 15 mai</a></li>
+<li><a href="#Semaine-du-4-mai-au-8-mai" title="Semaine du 4 mai au 8 mai">Semaine du 4 mai au 8 mai</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Ouvrir tout</a><a class="back-to-top" href="#">Aller en haut</a><a class="go-to-bottom" href="#">Aller en bas</a><a class="cgu" href="https://apps.education.fr/cgu/" target="_blank">lire les CGU </a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Continuité-pédagogique--M-Salce" title="Continuité pédagogique | M. Salce">Continuité pédagogique | M. Salce</a><ul class="nav">
+<li><a href="#Semaine-du-08-Juin-au-11-Juin" title="Semaine du 08 Juin au 11 Juin">Semaine du 08 Juin au 11 Juin</a></li>
+<li><a href="#Semaine-du-02-Juin-au-05-Juin" title="Semaine du 02 Juin au 05 Juin">Semaine du 02 Juin au 05 Juin</a></li>
+<li><a href="#Semaine-du-25-Mai-au-29-Mai" title="Semaine du 25 Mai au 29 Mai">Semaine du 25 Mai au 29 Mai</a></li>
+<li><a href="#Semaine-du-18-mai-au-22-mai" title="Semaine du 18 mai au 22 mai">Semaine du 18 mai au 22 mai</a></li>
+<li><a href="#Semaine-du-11-mai-au-15-mai" title="Semaine du 11 mai au 15 mai">Semaine du 11 mai au 15 mai</a></li>
+<li><a href="#Semaine-du-4-mai-au-8-mai" title="Semaine du 4 mai au 8 mai">Semaine du 4 mai au 8 mai</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Ouvrir tout</a><a class="back-to-top" href="#">Aller en haut</a><a class="go-to-bottom" href="#">Aller en bas</a><a class="cgu" href="https://apps.education.fr/cgu/" target="_blank">lire les CGU </a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha256-kJrlY+s09+QoWjpkOrXXwhxeaoDz9FW5SaxF8I0DibQ=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
